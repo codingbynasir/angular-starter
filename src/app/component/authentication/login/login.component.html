@@ -1,0 +1,21 @@
+<form [formGroup]="form" (ngSubmit)="submitForm()">
+  <div class="example-container">
+    <mat-form-field appearance="outline">
+      <mat-label>Enter username</mat-label>
+      <input matInput placeholder="Username" formControlName="username">
+      <mat-icon matSuffix>person</mat-icon>
+      <mat-error>Field is required</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Enter password</mat-label>
+      <input matInput placeholder="Password" formControlName="password" [type]="hide ? 'password' : 'text'">
+      <button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+      <mat-error>Field is required</mat-error>
+    </mat-form-field>
+    <button mat-flat-button color="primary">Login</button>
+  </div>
+  <hr>
+  <p>Are you new here? <a routerLink="/auth/login">Sign up now</a></p>
+</form>
