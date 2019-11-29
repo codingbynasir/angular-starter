@@ -15,7 +15,10 @@ const routes: Routes = [
     path: 'auth',
     component: AuthLayoutComponent,
     children: [
-      {path: '', loadChildren: () => import('./component/authentication/authentication.module').then(m => m.AuthenticationModule)}
+      {
+        path: '',
+        loadChildren: () => import('./component/authentication/authentication.module').then(m => m.AuthenticationModule)
+      }
     ]
   },
   {
