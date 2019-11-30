@@ -19,11 +19,11 @@ export class MainNavComponent {
       shareReplay()
     );
   public drawerMenuItems = [
-    {name: 'Home', state: ''},
-    {name: 'About', state: ''},
-    {name: 'Application', state: ''},
-    {name: 'Contact', state: ''},
-    {name: 'Layout', state: ''},
+    {name: 'Dashboard', state: '/dashboard', icon: 'home'},
+    {name: 'Component', state: '', icon: ''},
+    {name: 'Application', state: '', icon: 'app'},
+    {name: 'Contact', state: '', icon: ''},
+    {name: 'Layout', state: '', icon: ''},
   ];
 
   constructor(
