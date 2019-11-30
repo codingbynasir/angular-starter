@@ -17,6 +17,7 @@ import {MatListModule} from '@angular/material/list';
 import {HttpClientModule} from '@angular/common/http';
 import {AuthGuard} from './share/security/auth-guard';
 import {Travel} from './share/static/travel';
+import {NgScrollbarModule} from 'ngx-scrollbar';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import {Travel} from './share/static/travel';
     MatMenuModule,
     HttpClientModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    NgScrollbarModule
   ],
   providers: [AuthGuard, Travel],
   bootstrap: [AppComponent]

@@ -3,10 +3,12 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar><img src="https://yt3.ggpht.com/a/AGF-l78q7TR09DV1xkk96eptBmwlMg3axpIeNb1rIg=s900-c-k-c0xffffffff-no-rj-mo">Nasir Khan</mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item *ngFor="let items of drawerMenuItems" routerLink="{{items.state}}"><mat-icon>{{items.icon}}</mat-icon> {{items.name}}</a>
-    </mat-nav-list>
+    <ng-scrollbar #scrollable>
+      <mat-toolbar><img src="https://yt3.ggpht.com/a/AGF-l78q7TR09DV1xkk96eptBmwlMg3axpIeNb1rIg=s900-c-k-c0xffffffff-no-rj-mo">Nasir Khan</mat-toolbar>
+      <mat-nav-list>
+        <a mat-list-item *ngFor="let items of drawerMenuItems" routerLink="{{items.state}}"><mat-icon>{{items.icon}}</mat-icon> {{items.name}}</a>
+      </mat-nav-list>
+    </ng-scrollbar>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
