@@ -12,5 +12,5 @@ Now you can use this starter for future software development.
 5. An authentication guard class is added in `../app/share/security/`. You can use it for authentication.
 6. Add all the services in `../app/share/service/`
 
-### No hassel to setup
+### No hassle to setup
    Just pull the repo, install the dependencies and work.
