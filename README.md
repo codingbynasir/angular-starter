@@ -3,6 +3,7 @@
 A starter package and all dependency of angular with angular material and flexboxgrid
 You can simply pull it and run `npm install` to install all dependency.
 Now you can use this starter for future software development.
+
 ## How do you use this starter template.
 1. Pull this repo.
 2. Install dependencies.
@@ -10,3 +11,6 @@ Now you can use this starter for future software development.
 4. There is only two layout in `../app/share/layout/`, you can add more layout here.
 5. An authentication guard class is added in `../app/share/security/`. You can use it for authentication.
 6. Add all the services in `../app/share/service/`
+
+### No hassel to setup
+   Just pull the repo, install the dependencies and work.
