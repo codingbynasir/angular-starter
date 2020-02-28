@@ -13,7 +13,9 @@ Now you can use this starter for future software development.
     `npm install`
 3. Create component in `../app/component/content` directory and create router for the conponent.
     1. Create component with lazy loading feature module using the following commad:
-        `ng generate module component/content/{component_name} --route {component_name} --module app.module
+    
+        `ng generate module component/content/{component_name} --route {component_name} --module app.module`
+        
     2. Add the route to the respective sub module of that component.
 4. There is only two layout in `../app/share/layout/`, you can add more layout here.
 5. An authentication guard class is added in `../app/share/security/`. You can use it for authentication.
