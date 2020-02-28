@@ -7,6 +7,7 @@ Now you can use this starter for future software development.
 ## How do you use this starter template.
 1. Pull this repo.
 2. Navigate on project directory and install dependencies using the following command.
+
     `cd angular-starter`
     `npm install`
 3. Create component in `../app/component/content` directory and create router for the conponent.
