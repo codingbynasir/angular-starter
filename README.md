@@ -9,6 +9,7 @@ Now you can use this starter for future software development.
 2. Navigate on project directory and install dependencies using the following command.
 
     `cd angular-starter`
+    
     `npm install`
 3. Create component in `../app/component/content` directory and create router for the conponent.
     1. Create component with lazy loading feature module using the following commad:
